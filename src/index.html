@@ -11,21 +11,23 @@
   <body>
     <main>
       <div class="container">
-      <form class="form">
-        <label>
-          <input
-            type="text"
-            name="search-text"
-            placeholder="Search images..."
-            required
-          />
-        </label>
-        <button type="submit">Search</button>
-      </form>
-      <span class="loader hidden"></span>
-      <ul class="gallery"></ul>
+        <form class="form">
+          <label>
+            <input
+              type="text"
+              name="search-text"
+              placeholder="Search images..."
+              required
+            />
+          </label>
+          <button class="button-search" type="submit">Search</button>
+        </form>
+
+        <ul class="gallery"></ul>
+        <button type="button" class="button-load hidden">Load more</button>
+        <div class="loader hidden"></div>
+      </div>
     </main>
-    </div>
 
     <script type="module" src="./main.js"></script>
   </body>

@@ -49,7 +49,7 @@ input:focus:not(:placeholder-shown) {
     border-color: #4a6cff;
 }
         
-button {
+.button-search {
     background-color: #4a6cff;
     color: white;
     font-size: 16px;
@@ -60,11 +60,11 @@ button {
     transition: background-color 0.2s ease;
 }
 
-button:hover {
+.button-search:hover {
     background-color: #3c59d9;
 }
 
-button:active {
+.button-search:active {
     background-color: #2e46b8;
 }
 
@@ -148,4 +148,28 @@ button:active {
     display: block;
     font-weight: bold;
 }
-            
+
+.button-load {
+    background-color: #4a6cff;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 32px;
+    width: 125px;
+    place-self: center;
+}
+
+.button-load:hover {
+    background-color: #3c59d9;
+}
+
+.button-load:active {
+    background-color: #2e46b8;
+}
+.hidden {
+    display: none;
+}
