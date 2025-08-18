@@ -21,7 +21,7 @@ let totalHits = 0;
 formEl.addEventListener('submit', async e => {
   e.preventDefault();
 
-  const query = e.target.elements['search-text'].value.trim();
+  query = e.target.elements['search-text'].value.trim();
 
   if (!query) {
     iziToast.warning({
@@ -51,6 +51,11 @@ formEl.addEventListener('submit', async e => {
 
     if (totalHits > perPage) {
       showLoadMoreButton();
+    } else {
+      hideLoadMoreButton();
+      iziToast.info({
+        message: "We're sorry, but you've reached the end of search results.",
+      });
     }
   } catch (error) {
     iziToast.error({
